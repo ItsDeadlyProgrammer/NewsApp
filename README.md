@@ -38,13 +38,38 @@ Welcome to **NewsApp** — a modern Android application built with **Jetpack Com
   INSERT YOUR NEWS API HERE = your_api_key_here
   ```
 
-4. **Configure Firebase Authentication**:
-- Connect your project to Firebase via the **Firebase Console**.
-- Enable **Email/Password Authentication** under Authentication → Sign-in Methods.
+4. **Configure Firebase Authentication**:  
+- Go to the [Firebase Console](https://console.firebase.google.com/).  
+- Create a new Firebase project (or select an existing one).  
+- Click **Add App → Android**.  
+  - Enter your **Android package name** (must match `app/build.gradle`).  
+  - Download the **google-services.json** file when prompted.  
+- Move the file into your project under:  
+  ```
+  app/google-services.json
+  ```
+- In Firebase Console → **Authentication → Sign-in Method**, enable **Email/Password Authentication**.
 
-5. **Sync Gradle** to download dependencies.
+5. **Update Gradle for Firebase**: 
+- In **project-level `build.gradle`**:  
+  ```
+  buildscript {
+      dependencies {
+          classpath 'com.google.gms:google-services:4.3.15'
+      }
+  }
+  ```
+- In **app-level `build.gradle`**:  
+  ```
+  plugins {
+      id 'com.android.application'
+      id 'com.google.gms.google-services' // Add this line
+      id 'org.jetbrains.kotlin.android'
+  }
+  ```
+- Sync Gradle to download dependencies.
 
-6. **Run the app** on an emulator or device.
+6. **Run the app** 🚀 on an emulator or a physical device.
 
 ---
 ## 📲 Download APK

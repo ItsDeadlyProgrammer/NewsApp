@@ -35,7 +35,7 @@ Welcome to **NewsApp** — a modern Android application built with **Jetpack Com
 - Get your API key from [NewsAPI.org](https://newsapi.org).
 - Add it inside your `NewsViewModel.kt` or in `local.properties`:
   ```
-  NEWS_API_KEY=your_api_key_here
+  INSERT YOUR NEWS API HERE = your_api_key_here
   ```
 
 4. **Configure Firebase Authentication**:
@@ -45,6 +45,11 @@ Welcome to **NewsApp** — a modern Android application built with **Jetpack Com
 5. **Sync Gradle** to download dependencies.
 
 6. **Run the app** on an emulator or device.
+
+---
+## 📲 Download APK
+
+[![Download NewsApp](https://img.shields.io/badge/Download-APK-brightgreen)](https://github.com/ItsDeadlyProgrammer/NewsApp/releases/download/v1.0.0/news.apk)
 
 ---
 

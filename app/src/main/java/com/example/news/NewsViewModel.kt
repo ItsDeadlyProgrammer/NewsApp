@@ -24,7 +24,7 @@ class NewsViewModel : ViewModel() {
     val topics = listOf("general", "business", "entertainment", "health", "science", "sports", "technology")
 
     private val api = RetrofitInstance.api
-    private val apiKey = "0c8af491b08f4153ad1e50f06874dfd1"
+    private val apiKey = "INSERT YOUR NEWS API HERE"
 
     fun selectTopic(topic: String) {
         selectedTopic = topic

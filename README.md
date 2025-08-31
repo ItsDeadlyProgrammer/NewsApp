@@ -17,7 +17,7 @@ Welcome to **NewsApp** — a modern Android application built with **Jetpack Com
 ## 🛠️ Tech Stack
 - Kotlin
 - Jetpack Compose
-- Material 3 (Material You)
+- Material 3 
 - Firebase Authentication
 - Retrofit + Gson (REST API, JSON parsing)
 - NewsAPI.org (News Provider)

@@ -63,7 +63,7 @@ Welcome to **NewsApp** — a modern Android application built with **Jetpack Com
   ```
   plugins {
       id 'com.android.application'
-      id 'com.google.gms.google-services' // Add this line
+      id 'com.google.gms.google-services' 
       id 'org.jetbrains.kotlin.android'
   }
   ```
